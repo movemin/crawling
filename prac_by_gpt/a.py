@@ -10,10 +10,19 @@ print(response)
 if response.status_code == 200:
     print("요청 성공")
 
+    # HTTP 상태 코드
+    print(response.status_code)
+
     # 응답 본문을 문자열로 반환
     print(response.text)
+
+    # 응답 본문의 글자 수
+    print(len(response.text))
+
+    # 응답 본문의 처음 100글자
+    print(response.text[:100])
 else:
     print("요청 실패")
 
     # HTTP 상태 코드
-    print(type(response.status_code))
+    print(response.status_code)
