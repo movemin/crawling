@@ -20,7 +20,7 @@ f = open("file_handling_01/test.txt", "r", encoding="utf-8")
 # f.seek(0)
 
 print(f.read())
-f.seek(0)
+f.seek(0)       # (숫자) 입력시 에러 난다면 바이트와 단위의 문제인데 유니코드의 같은 경우는 3개의 바이트를 쓰고 있는데 자리가 맞지 않는것
 print()
 print(f.readline())
 print(f.readline())
