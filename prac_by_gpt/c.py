@@ -1,3 +1,5 @@
+"""HTML 파싱 및 데이터 추출"""
+
 from bs4 import BeautifulSoup
 
 html = """
